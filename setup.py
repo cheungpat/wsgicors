@@ -43,5 +43,6 @@ setup(name='wsgicors',
       entry_points = """
       [paste.filter_app_factory]
       middleware = wsgicors:make_middleware
-      """
+      """,
+      use_2to3 = True
       )
